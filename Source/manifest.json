@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "xkcd-substitutions-2",
+	"version": "1.0",
+	"description": "A free and open source chrome extension that implements the xkcd substitutions 2 webcomic",
+	"content_scripts":
+		[
+			{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+			}
+		]
+}
